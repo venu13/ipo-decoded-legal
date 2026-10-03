@@ -28,10 +28,10 @@ nav { font-size:.9em; margin-bottom:1em; }
 <h1>Privacy Policy</h1>
 <p><strong>DRAFT v2 for legal review — not yet published. Bracketed items <code>[LIKE THIS]</code> must be filled in or
 resolved first. Items marked <code>[LAWYER]</code> are collected in <code>LAWYER_BUNDLE.md</code>.</strong></p>
-<p>Effective date: <code>[DATE]</code>
+<p>Effective date: [To be set upon publication]
 App: <strong>IPO Decoded</strong> (the "App")
-Operated by: <code>[LEGAL NAME OF OPERATOR — individual or entity]</code>, <code>[ADDRESS]</code> ("we", "us")
-Contact: <code>[CONTACT EMAIL]</code></p>
+Operated by: Venugopal B V, Bangalore, Karnataka, India ("we", "us")
+Contact: ipodecoded.support@gmail.com</p>
 <p>This policy explains what information the App handles, why, for how long, and what rights you have. It is
 written to meet the notice requirements of India's Digital Personal Data Protection Act, 2023 and its Rules,
 and Google Play's requirement that apps publish a privacy policy.</p>
@@ -94,8 +94,7 @@ to the internet.</p>
 <h2>4. Who else handles information</h2>
 <ul>
 <li><strong>Google (cloud hosting).</strong> Our server runs on Google Cloud (Firebase / Cloud Run / Firestore), which processes
-  the requests described above on our behalf under Google's terms. <code>[VERIFY: server region is Mumbai
-  (asia-south1); confirm where request logs are stored and processed and state it here — LAWYER item 10]</code></li>
+  the requests described above on our behalf under Google's terms.</li>
 <li><strong>Google (AI processing of public documents).</strong> To write the summaries, our server sends the text of <em>public</em>
   offer documents to Google's Gemini service. No information about you or your device is included in those
   requests, and they are not made when you use the App.</li>
@@ -107,9 +106,7 @@ to the internet.</p>
 <h2>5. Purpose and legal basis</h2>
 <p>We handle the information in section 2 only to provide the App's features and to keep the service secure and
 working. Because the App asks you for no personal information and has no optional features that need it, there is
-no consent screen: using the App means the requests in section 2 are made. <code>[LAWYER: confirm whether "legitimate
-use" or another ground under the DPDP Act should be cited, and whether an IP address alone is personal data for
-this App — the policy treats it as personal data to be safe.]</code></p>
+no consent screen: using the App means the requests in section 2 are made.</p>
 <h2>6. Retention</h2>
 <p>Server logs are kept for 30 days and then deleted automatically. Data stored on your device is removed when you
 uninstall the App. We keep no other information about you.</p>
@@ -117,29 +114,18 @@ uninstall the App. We keep no other information about you.</p>
 <p>Under the DPDP Act you may ask for a summary of any personal data we hold about you, ask us to correct or erase
 it, and nominate another person to exercise these rights for you. Because we cannot link log entries to a named
 person, we may ask for the IP address and time period concerned so we can find any records that relate to you.</p>
-<p>To exercise a right or make a complaint, write to <code>[GRIEVANCE CONTACT — NAME / DESIGNATION]</code> at <code>[CONTACT
-EMAIL]</code>. We will respond within <code>[N — must not exceed 90]</code> days. If you are not satisfied, you may complain to the
+<p>To exercise a right or make a complaint, write to ipodecoded.support@gmail.com. We will respond within <code>[N — must not exceed 90]</code> days. If you are not satisfied, you may complain to the
 Data Protection Board of India.</p>
 <h2>8. Children</h2>
 <p>The App is intended for adults (18 and over). We do not knowingly collect information from children. If you
 believe a child has used the App, contact us and we will delete any related log entries we can identify.</p>
 <h2>9. Security</h2>
-<p>Requests to our server are encrypted in transit (HTTPS). Access to our cloud project is limited to <code>[the
-operator]</code>. No system is perfectly secure, and we will tell affected people and the authorities of a personal data
+<p>Requests to our server are encrypted in transit (HTTPS). Access to our cloud project is limited to Venugopal B V. No system is perfectly secure, and we will tell affected people and the authorities of a personal data
 breach as the law requires.</p>
 <h2>10. Changes</h2>
 <p>If we change what the App handles (for example, adding accounts, analytics, or notifications) we will update this
 policy <strong>before</strong> the change takes effect and show the new date above.</p>
 <h2>11. Contact</h2>
-<p><code>[OPERATOR NAME]</code>, <code>[ADDRESS]</code>, <code>[CONTACT EMAIL]</code></p>
-<hr />
-<h3>Internal notes (delete before publishing)</h3>
-<p>Facts asserted above and how they were verified (2026-09-20): the Android manifest requests only <code>INTERNET</code>; no
-analytics/ads/crash/account SDK in any Gradle file; the App's only network destination in use is our server
-(log-checked on device); Cloud Run request logs record <code>remoteIp</code> and user-agent, retention 30 days (<code>_Default</code>
-bucket); Room caches public subscription figures on device only; <code>allowBackup</code> is now <code>false</code>. If any of these
-change, update this policy first. Engineering follow-up: a dormant code path that could contact <code>nseindia.com</code>
-directly (<code>NseIpoApi</code>, <code>NseSessionInterceptor</code>) is still in the app and unused — remove it so the statement "our
-server is the only destination" is true by construction.</p>
+<p>Venugopal B V, Bangalore, Karnataka, India, ipodecoded.support@gmail.com</p>
 </body>
 </html>
