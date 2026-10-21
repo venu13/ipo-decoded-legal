@@ -83,16 +83,16 @@ and Google Play's requirement that apps publish a privacy policy.</p>
 <td>On your device only; replaced when refreshed; <strong>removed when you uninstall the App</strong> (Android's automatic backup of App data is switched off, so it is not copied to a cloud backup)</td>
 </tr>
 <tr>
-<td>A small usage log kept by Google's Firebase software: the dates the App was used and which Firebase components are in it</td>
+<td>A small usage log kept on your device by Google's Firebase software</td>
 <td>Created on your device from the first launch, whether or not you turn on notifications</td>
-<td>Part of how Firebase software identifies itself to Google's notification service. The App makes no request to that service unless you turn on notifications</td>
-<td>On your device only; it is not sent to us; <strong>removed when you uninstall the App</strong></td>
+<td>Kept by the Firebase software itself; we do not use it</td>
+<td>On your device; we do not receive it; <strong>removed when you uninstall the App</strong></td>
 </tr>
 <tr>
 <td>A notification identifier (a random Firebase installation ID and notification registration token), and the notification topic you subscribe to ("Mainboard IPOs" and/or "SME IPOs")</td>
 <td>Created on your device by Google's Firebase Cloud Messaging <strong>only after you turn on new-IPO notifications</strong>. It goes to Google, not to our server: we publish to a topic and never receive, see or store the identifier</td>
 <td>To deliver the notifications you asked for, and only those</td>
-<td>Held by Google while notifications are on. The registration token is deleted from your device when you turn the last notification setting off; all of it is removed when you uninstall the App. Google handles its own copy under its terms</td>
+<td>Held by Google while notifications are on. When you turn all alerts off, the app deletes its registration token. Google may keep the installation record until the app is uninstalled or inactive for a long time. Google handles its own copy under its terms</td>
 </tr>
 </tbody>
 </table>
@@ -142,8 +142,9 @@ consent is that choice, and you can withdraw it by turning the setting off in Ab
 permission in your phone's settings.</p>
 <h2>6. Retention</h2>
 <p>Server logs are kept for 30 days and then deleted automatically. Data stored on your device is removed when you
-uninstall the App. Turning the last notification setting off deletes the notification registration token from your device and
-ends your topic subscriptions; the Firebase installation ID is removed when you uninstall the App. We keep no other information about you.</p>
+uninstall the App. When you turn all alerts off, the app deletes its registration token. Google may keep the installation
+record until the app is uninstalled or inactive for a long time. Turning an alert off also ends its topic subscription.
+We keep no other information about you.</p>
 <h2>7. Your rights</h2>
 <p>Under the DPDP Act you may ask for a summary of any personal data we hold about you, ask us to correct or erase
 it, and nominate another person to exercise these rights for you. Because we cannot link log entries to a named
