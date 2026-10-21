@@ -92,7 +92,7 @@ and Google Play's requirement that apps publish a privacy policy.</p>
 <td>A notification identifier (a random Firebase installation ID and notification registration token), and the notification topic you subscribe to ("Mainboard IPOs" and/or "SME IPOs")</td>
 <td>Created on your device by Google's Firebase Cloud Messaging <strong>only after you turn on new-IPO notifications</strong>. It goes to Google, not to our server: we publish to a topic and never receive, see or store the identifier</td>
 <td>To deliver the notifications you asked for, and only those</td>
-<td>Held by Google while notifications are on. Deleted from your device when you turn the last notification setting off, and removed with the App when you uninstall it; Google handles its own copy under its terms</td>
+<td>Held by Google while notifications are on. The registration token is deleted from your device when you turn the last notification setting off; all of it is removed when you uninstall the App. Google handles its own copy under its terms</td>
 </tr>
 </tbody>
 </table>
@@ -142,8 +142,8 @@ consent is that choice, and you can withdraw it by turning the setting off in Ab
 permission in your phone's settings.</p>
 <h2>6. Retention</h2>
 <p>Server logs are kept for 30 days and then deleted automatically. Data stored on your device is removed when you
-uninstall the App. Turning the last notification setting off deletes the notification identifier from your device and
-ends your topic subscriptions. We keep no other information about you.</p>
+uninstall the App. Turning the last notification setting off deletes the notification registration token from your device and
+ends your topic subscriptions; the Firebase installation ID is removed when you uninstall the App. We keep no other information about you.</p>
 <h2>7. Your rights</h2>
 <p>Under the DPDP Act you may ask for a summary of any personal data we hold about you, ask us to correct or erase
 it, and nominate another person to exercise these rights for you. Because we cannot link log entries to a named
