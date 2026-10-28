@@ -26,7 +26,7 @@ nav { font-size:.9em; margin-bottom:1em; }
 <body>
 <nav><a href="index.html">IPO Decoded</a> · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a></nav>
 <h1>Privacy Policy</h1>
-<p>Last updated: 21 October 2026. Effective date: 28 October 2026. This policy may be updated from time to time; material changes will be reflected here.</p>
+<p>Last updated: 28 October 2026. Effective date: 28 October 2026. This policy may be updated from time to time; material changes will be reflected here.</p>
 <p>App: <strong>IPO Decoded</strong> (the "App")<br>
 Operated by: Venugopal B V, Bangalore, Karnataka, India ("we", "us")<br>
 Contact: ipodecoded.support@gmail.com</p>
@@ -89,7 +89,7 @@ and Google Play's requirement that apps publish a privacy policy.</p>
 <td>On your device; we do not receive it; <strong>removed when you uninstall the App</strong></td>
 </tr>
 <tr>
-<td>A notification identifier (a random Firebase installation ID and notification registration token), and the notification topic you subscribe to ("Mainboard IPOs" and/or "SME IPOs")</td>
+<td>A notification identifier (a random Firebase installation ID and notification registration token), and the notification topic you subscribe to ("Mainboard IPOs" and/or "SME IPOs"), plus the app version and basic device details (operating system version, model and brand) that Google's software sends with it</td>
 <td>Created on your device by Google's Firebase Cloud Messaging <strong>only after you turn on new-IPO notifications</strong>. It goes to Google, not to our server: we publish to a topic and never receive, see or store the identifier</td>
 <td>To deliver the notifications you asked for, and only those</td>
 <td>Held by Google while notifications are on. When you turn all alerts off, the app deletes its registration token. Google may keep the installation record until the app is uninstalled or inactive for a long time. Google handles its own copy under its terms</td>
@@ -101,7 +101,7 @@ build profiles, or contact you, and we have no way to link a log entry to a name
 App shows is public information about companies and offers, not information about you.</p>
 <h2>3. What we do not collect</h2>
 <p>Name, email, phone number, postal address, date of birth, government or financial identifiers, bank or payment
-details, precise or approximate location, contacts, photos, files, microphone or camera data, advertising
+details, precise or approximate location (your IP address is recorded in server logs as described in section 2, but we do not use it to work out where you are), contacts, photos, files, microphone or camera data, advertising
 identifiers, or information about other apps on your device.</p>
 <p>The app requests only the standard Android permissions listed below. Libraries it uses may also add a small internal
 permission that protects the app's own components; it gives no access to your data or device.</p>
@@ -145,22 +145,31 @@ permission in your phone's settings.</p>
 uninstall the App. When you turn all alerts off, the app deletes its registration token. Google may keep the installation
 record until the app is uninstalled or inactive for a long time. Turning an alert off also ends its topic subscription.
 We keep no other information about you.</p>
-<h2>7. Your rights</h2>
+<h2 id="delete-data">7. Deleting your data</h2>
+<p>IPO Decoded, operated by Venugopal B V, keeps very little about you. You can delete what exists in any of these ways:</p>
+<ul>
+<li>Turn off all alerts in the app's About screen. This deletes the app's notification registration token.</li>
+<li>Uninstall the app. This removes all data stored on your device.</li>
+<li>Email ipodecoded.support@gmail.com to ask about records relating to you.</li>
+</ul>
+<p><strong>Deleted:</strong> the notification registration token when alerts are turned off, and the data on your device when the app is uninstalled.</p>
+<p><strong>Kept:</strong> server logs (IP address, requested address, time and request label) for 30 days, then deleted automatically. Google may keep the installation record until the app is uninstalled or inactive for a long time.</p>
+<h2>8. Your rights</h2>
 <p>Under the DPDP Act you may ask for a summary of any personal data we hold about you, ask us to correct or erase
 it, and nominate another person to exercise these rights for you. Because we cannot link log entries to a named
 person, we may ask for the IP address and time period concerned so we can find any records that relate to you.</p>
 <p>To exercise a right or make a complaint, write to ipodecoded.support@gmail.com. We will respond within 30 days. If you are not satisfied, you may complain to the
 Data Protection Board of India.</p>
-<h2>8. Children</h2>
+<h2>9. Children</h2>
 <p>The App is intended for adults (18 and over). We do not knowingly collect information from children. If you
 believe a child has used the App, contact us and we will delete any related log entries we can identify.</p>
-<h2>9. Security</h2>
+<h2>10. Security</h2>
 <p>Requests to our server are encrypted in transit (HTTPS). Access to our cloud project is limited to Venugopal B V. No system is perfectly secure, and we will tell affected people and the authorities of a personal data
 breach as the law requires.</p>
-<h2>10. Changes</h2>
+<h2>11. Changes</h2>
 <p>If we change what the App handles (for example, adding accounts or analytics) we will update this
 policy <strong>before</strong> the change takes effect and show the new date above.</p>
-<h2>11. Contact</h2>
+<h2>12. Contact</h2>
 <p>Venugopal B V, Bangalore, Karnataka, India, ipodecoded.support@gmail.com</p>
 </body>
 </html>
